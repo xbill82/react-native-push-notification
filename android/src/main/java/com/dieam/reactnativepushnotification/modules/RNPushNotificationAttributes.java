@@ -139,7 +139,7 @@ public class RNPushNotificationAttributes {
             String key = iterator.nextKey();
 
             if (!bundle.containsKey(key))
-                return false;
+                continue;
 
             switch (userInfo.getType(key)) {
                 case Null: {
